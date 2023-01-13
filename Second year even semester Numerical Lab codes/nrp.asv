@@ -1,0 +1,15 @@
+clc
+clear all
+x=1.5;
+y=3.5;
+display('u     v     X     Y');
+
+for i=1:1:20;
+    u=x^2-y^2-3;
+    v=x^2+y^2-13;
+    a=2x;
+    b=-2y;
+    c=2x;
+    d=2y;
+    
+    m=x-(((u*d)-(v*b))/((a*d)-(b*c)))
